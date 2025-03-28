@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="/style.css"/>
+    <link rel="icon" type="image/x-icon" href="https://physicsderived.club/favicon.ico"/>
+    <title>Physics Derived</title>
+
+
+    <style>
+        ul,ol{
+            margin: 0;
+            padding: 0;
+            list-style-position: inside;
+        }
+        a{
+            text-decoration: none;
+        }
+        ol a:hover{
+            text-decoration: underline;
+        }
+        p a:hover{
+            text-decoration: underline;
+        }
+        ul a:hover{
+            text-decoration: underline;
+        }
+        ul.c1ul>li::marker{
+            content:"→ ";
+            font-size: 20px;
+        }
+        ul.mainlist>li::marker{
+            content: "✶ ";
+            font-size: 24px;
+        }
+        
+
+
+        .clrb{
+            clear: both;
+        }
+
+
+        table {
+            margin: auto;
+            width: 100%;
+            max-width: 700px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 2px solid black;
+            padding: 8px;
+        }
+
+        th {
+            white-space: nowrap;
+        }
+
+
+        mjx-container[display="true"] {
+            font-size: 110% !important;
+            text-align: left !important;
+            width: 100% !important;
+            margin-left: 6% !important;
+            padding: 20px;
+        }
+
+
+        mjx-mtable {
+            text-align: left !important;
+            margin-left: 10px;
+        }
+
+        
+
+        @media screen and (max-width: 645px) {
+            .imgdiv{
+                float: none !important;
+                display: block;
+                text-align: center;
+            }
+            mjx-mtable {
+            margin-left: 0;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <div id="lona">
+            <div id="navbar" onclick="ocnav()">
+                <div class="navdiv" id="navbar1"></div>
+                <div class="navdiv" id="navbar2"></div>
+                <div class="navdiv" id="navbar3"></div>
+            </div>
+
+            <div id="navclo" onclick="ocnav()">
+                <div class="navdiv" id="navclo1"></div>
+                <div class="navdiv" id="navclo2"></div>
+                <div class="navdiv" id="navclo3"></div>
+            </div>
+
+            <div id="logo">
+                <img src="/logo.png" width="40px;"/>
+            </div>
+            
+            <div id="name">Physics<span style="color: hsl(170, 100%, 50%);">Derived</span></div>
+        </div>
+        <nav id="nav">
+            <a href="/index.html" title="Home"><div class="nav-item">Home</div></a>
+            <a href="/about.html" title="About this site"><div class="nav-item">About</div></a>
+
+            <div style="overflow: visible; height: 56px;" id="navchap">
+                <a href="/chapters.html" title="List of Chapters"><div class="nav-item" style="text-align: center;">Chapters</div></a>
+
+                <div style="background-color: rgb(219, 217, 217);" id="chapterlist">
+                    <a href="Mathematical_methods_in_physics.html"><div style="width: 100%; color: black; text-align: center;">Mathematical Methods</div></a>
+                    <a href="vectors.html"><div style="width: 100%; color: black; text-align: center;">Vectors</div></a>
+                </div>
+            </div>
+
+            <a href="/contact.html" title="Contact Us"><div class="nav-item">Contact</div></a>
+            <a href="/feedback.html"><div class="nav-item">Feedback</div></a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- <span><b>Get Offline Access</b></span>
+        <button id="downloadBtn">
+            <a href="/Mathematical Methods.pdf" download="Mathematical_Methods_in_Physics.pdf">
+                Download PDF
+            </a>
+        </button>
+
+        <hr/> -->
+
+        <div id="mainfnav">
+            <div>
+                <div id="bfnav" title="List of Contents">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <ol id="bfnavi">
+                <li><a href="#Introduction" style="font-weight: bold">Introduction</a>
+    
+                    <ol style="list-style-position:outside ;margin-block-start: 0.2em; margin-block-end: 1em;margin-inline-start: 0px;margin-inline-end: 0px;padding-inline-start: 40px; list-style-type:lower-roman">
+    
+                        <li><a href="#Scalars">Scalars</a></li>
+                        <li><a href="#Vectors">Vectors</a></li>
+                    </ol>
+    
+                </li>
+                <li><a href="#Addition_of_Vectors" style="font-weight: bold">Addition of Vectors</a>
+                
+                    <ol style="list-style-position:outside ;margin-block-start: 0.2em; margin-block-end: 1em;margin-inline-start: 0px;margin-inline-end: 0px;padding-inline-start: 40px; list-style-type:lower-roman">
+    
+    
+                        <li><a href="#Triangle_Law">Triangle Law</a></li>
+                        <li><a href="#Parallelogram_Law">Parallelogram Law</a></li>
+                        <li><a href="#Magnitude_and_Direction_of_Resultant">Magnitude and Direction of Resultant</a></li>
+                        <li><a href="#Difference_of_two_Vectors">Difference of two Vectors</a></li>
+                    </ol>
+    
+                </li>
+                <!-- <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li> -->
+            </ol>
+        </div>
+
+
+    </main>
+
+
+    <footer>
+        <p style="align-self: center; padding-left: 10px; text-shadow: 0 0 1px white;"> &copy; 2025 <a href="/index.html">Physics Derived</a>. All Rights Reserved.</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+    const navLinks = document.querySelectorAll('nav a');
+
+    
+    navLinks.forEach(link => {
+        if (link.href === window.location.href) {
+            link.classList.add('active');
+            
+        }
+    });
+
+    function ocnav() {
+        var nav = document.getElementById("nav");
+        var navbar = document.getElementById("navbar");
+        var navclo = document.getElementById("navclo")
+        var computedStyle = window.getComputedStyle(nav);
+
+
+        window.addEventListener("resize", function() {
+            if (window.innerWidth > 700) {
+                nav.style.display = "flex";
+                navbar.style.display = "none";
+                navclo.style.display = "none";
+
+            }
+            else{
+                nav.style.display = "none";
+                navbar.style.display = "block";
+                navclo.style.display = "none";
+            }
+        });
+        // Check if the current display is "none" using computed style
+        if (computedStyle.display === "none") {
+            nav.style.display = "block";  // Show the nav
+            navbar.style.display = "none";
+            navclo.style.display = "block";
+
+        }
+
+        else{
+            nav.style.display = "none";
+            navbar.style.display = "block";
+            navclo.style.display = "none";
+        
+        }
+    }
+    </script>
+    
+</body>
+</html>
